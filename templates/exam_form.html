@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<section class="card narrow"><h1>Create exam</h1><form method="post">{{ form.hidden_tag() }}{% for field in [form.title,form.description,form.duration_minutes] %}<label>{{ field.label }}{{ field() }}</label>{% endfor %}{{ form.submit(class_='btn') }}</form></section>{% endblock %}

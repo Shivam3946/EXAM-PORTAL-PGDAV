@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<section class="card narrow"><h1>Reset password</h1><form method="post">{{ form.hidden_tag() }}<label>{{ form.password.label }}{{ form.password() }}</label><label>{{ form.confirm.label }}{{ form.confirm() }}</label>{{ form.submit(class_='btn') }}</form></section>{% endblock %}
